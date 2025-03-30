@@ -1,4 +1,1 @@
-<xml xmlns="http://www.w3.org/1999/xhtml">
-  <block type="pxt-on-start"></block>
-  <block type="device_forever"></block>
-</xml>
+<xml xmlns="https://developers.google.com/blockly/xml"><variables></variables><block type="pxt-on-start" id="qesx!dJ3f={ke1B2dtjP" x="20" y="20"><statement name="HANDLER"><block type="typescript_statement" id="LL~i2.[kFgM?b6wu,`zz"><mutation xmlns="http://www.w3.org/1999/xhtml" line0="namespace LCDDisplay {" line1="    //% block" line2="    export function InitDisplay() {" line3="" line4="    }" line5="}" numlines="6"></mutation></block></statement></block><block type="device_forever" id="TB6}8L8$cx:^[~zn:ny9" x="405" y="20"><statement name="HANDLER"><block type="LCDDisplay_InitDisplay" id="NH_#1ulu4q1?p%MzBAmW"></block></statement></block></xml>
