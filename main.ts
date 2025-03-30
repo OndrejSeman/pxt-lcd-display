@@ -1,9 +1,12 @@
-namespace LCDDisplay {
+basic.forever(function () {
+	
+})
+
+//% color="#AA278D" weight=100
+namespace LCD_Display {
+
     //% block
-    export function InitDisplay() {
+    export function helloWorld() {
 
     }
 }
-basic.forever(function () {
-    LCDDisplay.InitDisplay()
-})
