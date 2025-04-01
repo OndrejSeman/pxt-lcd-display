@@ -225,11 +225,15 @@ namespace RBTFT18V3 {
     /*
          * Set orientation
          */
-    //% block="SetOrientation: %orientation"
+    //% block="Set orientation: %orientation"
     //% weight=90
     export function setOrienation(orientation: Orientation): void {
  
         send(TFTCommands.MADCTL, [orientation])
+        if (orientation === Orientation.Rotate90 || orientation === Orientation.Rotate270) {
+            let TFTWIDTH = 162
+            let TFTHEIGHT = 130
+        }
     }
 
     /*
