@@ -412,12 +412,6 @@ namespace RBTFT18V3 {
     //% block="Clear screen"
     //% weight=65
     export function clearScreen(): void {        
-        if (TFTWIDTH > 140) {
-           basic.showString('A')
-        }
-        else {
-            basic.showString('B')
-        }
         drawRectangle(0, 0, TFTWIDTH, TFTHEIGHT, 0)
     }
 
