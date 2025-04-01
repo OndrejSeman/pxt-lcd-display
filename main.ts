@@ -59,8 +59,8 @@ enum Orientation {
 //% color="#275C6B" icon="\uf26c" weight=95 block="RB-TFT18-V3"
 namespace RBTFT18V3 {
     // Display commands & constants
-    let TFTWIDTH = 130
-    let TFTHEIGHT = 162
+    export let TFTWIDTH = 128
+    export let TFTHEIGHT = 160
 
     /**
      * TFT Commands
