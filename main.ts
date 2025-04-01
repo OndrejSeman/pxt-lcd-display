@@ -233,10 +233,13 @@ namespace RBTFT18V3 {
         if (orientation == Orientation.Rotate90 || orientation == Orientation.Rotate270) {
             let TFTWIDTH = 162
             let TFTHEIGHT = 130
+            basic.showNumber(0)
         } else {
             let TFTWIDTH = 130
             let TFTHEIGHT = 162
+            basic.showNumber(1)
         }
+        
     }
 
     /*
