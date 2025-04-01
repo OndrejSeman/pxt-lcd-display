@@ -177,7 +177,7 @@ namespace RBTFT18V3 {
     //% weight=100
     export function init(): void {
         // set SPI frequency
-        pins.spiFrequency(4000000)
+        pins.spiFrequency(15000000)
 
         // Software reset
         send(TFTCommands.SWRESET, [1])
@@ -237,6 +237,9 @@ namespace RBTFT18V3 {
             let TFTWIDTH = 50
             let TFTHEIGHT = 100
         }
+
+        TFTWIDTH = 162
+        TFTHEIGHT = 130
     }
 
     /*
