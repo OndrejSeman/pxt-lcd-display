@@ -231,15 +231,12 @@ namespace RBTFT18V3 {
  
         send(TFTCommands.MADCTL, [orientation])
         if (orientation == Orientation.Rotate90 || orientation == Orientation.Rotate270) {
-            TFTWIDTH = 162
-            TFTHEIGHT = 130
-            basic.showNumber(0)
+            RBTFT18V3.TFTWIDTH = 162
+            RBTFT18V3.TFTHEIGHT = 130            
         } else {
-            TFTWIDTH = 130
-            TFTHEIGHT = 162
-            basic.showNumber(1)
-        }
-        
+            RBTFT18V3.TFTWIDTH = 130
+            RBTFT18V3.TFTHEIGHT = 162            
+        }        
     }
 
     /*
@@ -414,14 +411,14 @@ namespace RBTFT18V3 {
 
     //% block="Clear screen"
     //% weight=65
-    export function clearScreen(): void {
-        drawRectangle(0, 0, TFTWIDTH, TFTHEIGHT, 0)
+    export function clearScreen(): void {        
         if (TFTWIDTH > 140) {
            basic.showString('A')
         }
         else {
             basic.showString('B')
         }
+        drawRectangle(0, 0, TFTWIDTH, TFTHEIGHT, 0)
     }
 
     //% block="Turn display off"
