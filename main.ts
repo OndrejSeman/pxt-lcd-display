@@ -42,7 +42,7 @@ enum Color {
     Pink = 0xF81F
 }
 
-enum orientation {
+enum Orientation {
     //% block="Default"
     Default = 0x00,
     //% block="Rotate 90"
@@ -220,6 +220,16 @@ namespace RBTFT18V3 {
 
         // Turn display on
         send(TFTCommands.DISPON, [])
+    }
+
+    /*
+         * Set orientation
+         */
+    //% block="Set orientation to  orientation:%orientation"
+    //% weight=90
+    export function setOrienation(orientation: Orientation): void {
+ 
+        send(TFTCommands.MADCTL, [orientation])
     }
 
     /*
