@@ -177,7 +177,7 @@ namespace RBTFT18V3 {
     //% weight=100
     export function init(): void {
         // set SPI frequency
-        pins.spiFrequency(15000000)
+        pins.spiFrequency(30000000)
 
         // Software reset
         send(TFTCommands.SWRESET, [1])
@@ -230,16 +230,13 @@ namespace RBTFT18V3 {
     export function setOrienation(orientation: Orientation): void {
  
         send(TFTCommands.MADCTL, [orientation])
-        if (orientation === Orientation.Rotate90 || orientation === Orientation.Rotate270) {
-            let TFTWIDTH = 100
-            let TFTHEIGHT = 50
+        if (orientation == Orientation.Rotate90 || orientation == Orientation.Rotate270) {
+            let TFTWIDTH = 162
+            let TFTHEIGHT = 130
         } else {
-            let TFTWIDTH = 50
-            let TFTHEIGHT = 100
+            let TFTWIDTH = 130
+            let TFTHEIGHT = 162
         }
-
-        TFTWIDTH = 162
-        TFTHEIGHT = 130
     }
 
     /*
