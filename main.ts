@@ -231,8 +231,8 @@ namespace RBTFT18V3 {
  
         send(TFTCommands.MADCTL, [orientation])
         if (orientation === Orientation.Rotate90 || orientation === Orientation.Rotate270) {
-            let TFTWIDTH = 162
-            let TFTHEIGHT = 130
+            let TFTWIDTH = 20
+            let TFTHEIGHT = 20
         }
     }
 
