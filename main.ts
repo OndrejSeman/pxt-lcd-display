@@ -225,7 +225,7 @@ namespace RBTFT18V3 {
     /*
          * Set orientation
          */
-    //% block="Set orientation to  orientation:%orientation"
+    //% block="SetOrientation: %orientation"
     //% weight=90
     export function setOrienation(orientation: Orientation): void {
  
