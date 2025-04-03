@@ -231,11 +231,11 @@ namespace RBTFT18V3 {
  
         send(TFTCommands.MADCTL, [orientation])
         if (orientation == Orientation.Rotate90 || orientation == Orientation.Rotate270) {
-            RBTFT18V3.TFTWIDTH = 162
-            RBTFT18V3.TFTHEIGHT = 130            
+            RBTFT18V3.TFTWIDTH = 160
+            RBTFT18V3.TFTHEIGHT = 128            
         } else {
-            RBTFT18V3.TFTWIDTH = 130
-            RBTFT18V3.TFTHEIGHT = 162            
+            RBTFT18V3.TFTWIDTH = 128
+            RBTFT18V3.TFTHEIGHT = 160            
         }        
     }
 
