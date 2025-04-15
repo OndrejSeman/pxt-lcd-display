@@ -54,7 +54,7 @@ enum Orientation {
 }
 
 /**
-  * RB-TFT1.8-V2 Block
+  * RB-TFT1.8-V3 Block
   */
 //% color="#275C6B" icon="\uf26c" weight=95 block="RB-TFT18-V3"
 namespace RBTFT18V3 {
@@ -166,7 +166,7 @@ namespace RBTFT18V3 {
      * Finish data-mode and set back to command-mode
      */
     function exitDataMode(): void {
-        pins.digitalWritePin(DigitalPin.P2, 1) // de-elect the TFT as SPI target
+        pins.digitalWritePin(DigitalPin.P2, 1) // de-select the TFT as SPI target
         pins.digitalWritePin(DigitalPin.P1, 0) // command/data = command
     }
 
@@ -214,6 +214,10 @@ namespace RBTFT18V3 {
         // Set Gamma
         send(TFTCommands.GMCTRP1, [0x02, 0x1C, 0x07, 0x12, 0x37, 0x32, 0x29, 0x2D, 0x29, 0x25, 0x2B, 0x39, 0x00, 0x01, 0x03, 0x10])
         send(TFTCommands.GMCTRN1, [0x03, 0x1D, 0x07, 0x06, 0x2E, 0x2C, 0x29, 0x2D, 0x2E, 0x2E, 0x37, 0x3F, 0x00, 0x00, 0x02, 0x10])
+
+        // Set default width and height
+        RBTFT18V3.TFTWIDTH = 160
+        RBTFT18V3.TFTHEIGHT = 128
 
         // Set normal mode
         send(TFTCommands.NORON, [])
