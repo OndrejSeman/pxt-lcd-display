@@ -1,6 +1,13 @@
 
 > Open this page at [https://ondrejseman.github.io/pxt-lcd-display/](https://ondrejseman.github.io/pxt-lcd-display/)
 
+This is simple TFT LCD Display Library, copied from [https://github.com/joy-it/pxt-rb-tft1.8]
+there are a few
+## Additional features
+- changed wiring of the display: CS was on P16, but this PIN ist not usable on Elecfreaks Wukong board, so I changed it to P0. In future I plan to make this configurable
+- new function to set orientation of the display
+- faster SPI clock setting
+  
 ## Use as Extension
 
 This repository can be added as an **extension** in MakeCode.
