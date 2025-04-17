@@ -8,11 +8,12 @@ This is simple TFT LCD Display Library, copied from [https://github.com/joy-it/p
 | ------------- |:-------------:|
 | VCC           | 3V            |
 | GND           | GND           |
-| SCL           | P13           |
+| SCL/SCK       | P13           |
 | SDA           | P15           |
-| RS/DC         | P1            |
-| RES           | 3V            |
+| RS/DC/A0      | P1            |
+| RES/RESET     | 3V            |
 | CS            | P0            |
+| LED           | 3V            |
 
 There are a few
 
