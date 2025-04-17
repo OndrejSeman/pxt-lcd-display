@@ -12,13 +12,13 @@ This is simple TFT LCD Display Library, copied from [https://github.com/joy-it/p
 | SDA           | P15           |
 | RS/DC/A0      | P1            |
 | RES/RESET     | 3V            |
-| CS            | P0            |
+| CS            | P2            |
 | LED           | 3V            |
 
-There are a few
+There are a few changes and additional features.
 
 ## Changes/Additional features
-- changed wiring of the display: CS was on P16, but this PIN ist not usable on Elecfreaks Wukong board, so I changed it to P0. In future I plan to make this configurable
+- changed wiring of the display: CS was on P16, but this PIN ist not usable on Elecfreaks Wukong board, so I changed it to P2. In future I plan to make this configurable
 - new function to set orientation of the display
 - faster SPI clock setting
   
